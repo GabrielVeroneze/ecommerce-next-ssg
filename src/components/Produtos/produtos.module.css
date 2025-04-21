@@ -1,0 +1,86 @@
+/* Categories.module.css */
+.produtos {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+}
+
+.info {
+    font-size: 13px;
+    padding: 16px;
+}
+
+.produtos figure {
+    margin: 0;
+}
+
+.imagem {
+    flex-shrink: 0;
+}
+
+.titulo {
+    display: flex;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 23px; /* 143.75% */
+    margin: 0;
+}
+
+.descricao {
+    color: #212529;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+    padding: 13px 0;
+}
+
+.preco {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px; /* 143.75% */
+}
+
+.botao {
+    align-items: flex-start;
+    background: #9353ff;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    gap: 10px;
+    letter-spacing: 0.457px;
+    line-height: normal;
+    margin-top: 10px;
+    padding: 9px 16px;
+    text-align: center;
+    width: 102px;
+}
+
+.botao:hover {
+    background-color: #3700b3; /* Cor de fundo mais escura quando o mouse passa por cima */
+}

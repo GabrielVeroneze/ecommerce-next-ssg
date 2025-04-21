@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.imageWrapper {
+    flex: 1;
+}
+
+.productImage {
+    object-fit: cover;
+    width: 100%;
+}
+
+.info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
+
+.divider {
+    border: none;
+    background: #e1e1e1;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.options {
+    margin-bottom: 2rem;
+}
+
+.colors {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.colorOption {
+    border: 2px solid #a2a2a2;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 24px;
+    margin-right: 10px;
+    width: 24px;
+}
+
+.selectedColor {
+    border: 2px solid #27be56;
+}
+
+.sizes {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.sizeOption {
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.selectedSize {
+    border-color: #27be56;
+}
+
+.addToCart {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.addToCart:hover {
+    background-color: #333;
+}
