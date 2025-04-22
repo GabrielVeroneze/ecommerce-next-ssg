@@ -13,11 +13,11 @@ async function fetchProdutos() {
 
     const produtos: Produto[] = await res.json()
 
-    return { produtos }
+    return produtos
 }
 
 export default async function Home() {
-    const { produtos } = await fetchProdutos()
+    const produtos = await fetchProdutos()
     const categorias = getCategorias()
 
     return (
