@@ -5,10 +5,10 @@ import { Categoria } from '@/types/Categoria'
 import styles from './page.module.css'
 
 async function fetchProdutos() {
-    const res = await fetch('http://localhost:3000/api/produtos')
+    const res = await fetch('https://api.npoint.io/53784130b3981f299ec0/produtos')
 
     if (!res.ok) {
-        throw new Error('Não foi possível obter os dados')
+        throw new Error('Não foi possível obter os produtos')
     }
 
     const produtos: Produto[] = await res.json()
