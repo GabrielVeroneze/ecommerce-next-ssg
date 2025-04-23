@@ -3,9 +3,11 @@ import Produto from '@/components/Produto'
 import styles from './page.module.css'
 
 async function getProduto(slug: string) {
-    const res = await fetch(`http://localhost:3000/api/produto/${slug}`)
+    const res = await fetch('https://api.npoint.io/53784130b3981f299ec0/produtos')
 
-    const produto: ProdutoType = await res.json()
+    const produtos: ProdutoType[] = await res.json()
+
+    const produto = produtos.find((produto) => produto.id.toString() === slug)
 
     return produto
 }
