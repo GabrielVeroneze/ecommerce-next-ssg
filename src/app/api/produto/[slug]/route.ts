@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getTodosProdutos } from '@/lib/api'
 
-export async function GET(
-    request: NextRequest,
-    context: { params: { slug: string } }
-) {
-    const { slug } = context.params
+interface RouteParams {
+    params: Promise<{ slug: string }>
+}
+
+export async function GET(_request: NextRequest, context: RouteParams) {
+    const { slug } = await context.params
 
     const produtos = getTodosProdutos()
 
