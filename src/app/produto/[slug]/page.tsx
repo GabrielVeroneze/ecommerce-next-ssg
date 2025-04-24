@@ -12,6 +12,18 @@ async function getProduto(slug: string) {
     return produto
 }
 
+export async function generateStaticParams() {
+    const res = await fetch('https://api.npoint.io/53784130b3981f299ec0/produtos')
+
+    const produtos: ProdutoType[] = await res.json()
+
+    const result = produtos.map((produto) => ({
+        slug: produto.id.toString(),
+    }))
+
+    return result
+}
+
 interface ProdutoPageProps {
     params: Promise<{ slug: string }>
 }
